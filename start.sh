@@ -9,4 +9,4 @@ cd ..\jeewx
 set MAVEN_OPTS=%MAVEN_OPTS% -Xms1024M -Xmx1024M -XX:PermSize=256M -XX:MaxPermSize=256M
 mvn tomcat:run
 
-echo 'Build project successfully!'
+echo 'build project successfully!'
