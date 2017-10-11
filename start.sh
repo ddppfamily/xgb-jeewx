@@ -7,6 +7,6 @@ mvn install package -Dmaven.test.skip=true
 
 cd ../jeewx
 MAVEN_OPTS=%MAVEN_OPTS% -Xms1024M -Xmx1024M -XX:PermSize=256M -XX:MaxPermSize=256M
-mvn -Dmaven.tomcat.port=8080 tomcat:run
+mvn tomcat:run
 
 echo 'build project successfully!'
