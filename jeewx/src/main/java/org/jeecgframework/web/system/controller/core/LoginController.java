@@ -115,15 +115,15 @@ public class LoginController extends BaseController{
 		DataSourceContextHolder
 				.setDataSourceType(DataSourceType.dataSource_jeecg);
 		AjaxJson j = new AjaxJson();
-        String randCode = req.getParameter("randCode");
-        if (StringUtils.isEmpty(randCode)) {
-            j.setMsg("请输入验证码");
-            j.setSuccess(false);
-        } else if (!randCode.equalsIgnoreCase(String.valueOf(session.getAttribute("randCode")))) {
+//        String randCode = req.getParameter("randCode");
+//        if (StringUtils.isEmpty(randCode)) {
+//            j.setMsg("请输入验证码");
+//            j.setSuccess(false);
+//        } else if (!randCode.equalsIgnoreCase(String.valueOf(session.getAttribute("randCode")))) {
             // todo "randCode"和验证码servlet中该变量一样，通过统一的系统常量配置比较好，暂时不知道系统常量放在什么地方合适
-            j.setMsg("验证码错误！");
-            j.setSuccess(false);
-        } else {
+//            j.setMsg("验证码错误！");
+//            j.setSuccess(false);
+//        } else {
             int users = userService.getList(TSUser.class).size();
             
             if (users == 0) {
@@ -165,7 +165,7 @@ public class LoginController extends BaseController{
                     j.setSuccess(false);
                 }
             }
-        }
+//        }
 		return j;
 	}
 

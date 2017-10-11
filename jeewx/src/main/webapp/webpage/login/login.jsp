@@ -80,12 +80,12 @@ label.iPhoneCheckLabelOn span {
                     <div class="tip">
                         <input class="password" name="password" type="password" id="password" title="密码" value="123456" nullmsg="请输入密码!" />
                     </div>
-                    <div class="tip">
-                        <input class="randCode" name="randCode" type="text" id="randCode" title="" value="" nullmsg="请输入验证码!" />
-                        <div style="float: right; margin-left:-220px; margin-right: 10px;">
-                            <img id="randCodeImage" src="randCodeImage" />
-                        </div>
-                    </div>
+<!--                     <div class="tip"> -->
+<!--                         <input class="randCode" name="randCode" type="text" id="randCode" title="" value="" nullmsg="请输入验证码!" /> -->
+<!--                         <div style="float: right; margin-left:-220px; margin-right: 10px;"> -->
+<!--                             <img id="randCodeImage" src="randCodeImage" /> -->
+<!--                         </div> -->
+<!--                     </div> -->
                     <%--update-end--Author:zhangguoming  Date:20140226 for：添加验证码--%>
                     <div class="loginButton">
                         <div style="float: left; margin-left: -9px;">
